@@ -11,6 +11,15 @@
 		D03310B12C0738DF00B08D96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03310B02C0738DF00B08D96 /* ContentView.swift */; };
 		D03310B32C0738E000B08D96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03310B22C0738E000B08D96 /* Assets.xcassets */; };
 		D03310B62C0738E000B08D96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03310B52C0738E000B08D96 /* Preview Assets.xcassets */; };
+		D03310C42C07420A00B08D96 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03310C32C07420A00B08D96 /* CountryModel.swift */; };
+		D03310C72C0745BA00B08D96 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03310C62C0745BA00B08D96 /* NetworkManager.swift */; };
+		D03310C92C07506C00B08D96 /* CityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03310C82C07506C00B08D96 /* CityView.swift */; };
+		D03310CB2C07507D00B08D96 /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03310CA2C07507D00B08D96 /* CityViewModel.swift */; };
+		D03310CD2C07651500B08D96 /* DetailScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03310CC2C07651500B08D96 /* DetailScreenView.swift */; };
+		D03310CF2C07652300B08D96 /* DetailScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03310CE2C07652300B08D96 /* DetailScreenViewModel.swift */; };
+		D03310D12C076B5D00B08D96 /* HotelsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03310D02C076B5D00B08D96 /* HotelsScreenView.swift */; };
+		D03310D32C07CDD900B08D96 /* MustSeeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03310D22C07CDD900B08D96 /* MustSeeScreenView.swift */; };
+		D03310D52C07CDEA00B08D96 /* TransportScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03310D42C07CDEA00B08D96 /* TransportScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		D03310B02C0738DF00B08D96 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D03310B22C0738E000B08D96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D03310B52C0738E000B08D96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D03310C32C07420A00B08D96 /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
+		D03310C62C0745BA00B08D96 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D03310C82C07506C00B08D96 /* CityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityView.swift; sourceTree = "<group>"; };
+		D03310CA2C07507D00B08D96 /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
+		D03310CC2C07651500B08D96 /* DetailScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenView.swift; sourceTree = "<group>"; };
+		D03310CE2C07652300B08D96 /* DetailScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenViewModel.swift; sourceTree = "<group>"; };
+		D03310D02C076B5D00B08D96 /* HotelsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsScreenView.swift; sourceTree = "<group>"; };
+		D03310D22C07CDD900B08D96 /* MustSeeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustSeeScreenView.swift; sourceTree = "<group>"; };
+		D03310D42C07CDEA00B08D96 /* TransportScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +69,12 @@
 		D03310AD2C0738DF00B08D96 /* TripApp */ = {
 			isa = PBXGroup;
 			children = (
-				D03310AE2C0738DF00B08D96 /* TripAppApp.swift */,
-				D03310B02C0738DF00B08D96 /* ContentView.swift */,
-				D03310B22C0738E000B08D96 /* Assets.xcassets */,
+				D03310BD2C0739FA00B08D96 /* App */,
+				D03310BE2C073A0700B08D96 /* Model */,
+				D03310BF2C073A2300B08D96 /* View */,
+				D03310BC2C0738F900B08D96 /* Resources */,
 				D03310B42C0738E000B08D96 /* Preview Content */,
+				D03310C52C07459800B08D96 /* Networking */,
 			);
 			path = TripApp;
 			sourceTree = "<group>";
@@ -65,6 +85,77 @@
 				D03310B52C0738E000B08D96 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D03310BC2C0738F900B08D96 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D03310B22C0738E000B08D96 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D03310BD2C0739FA00B08D96 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D03310AE2C0738DF00B08D96 /* TripAppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D03310BE2C073A0700B08D96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D03310C32C07420A00B08D96 /* CountryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D03310BF2C073A2300B08D96 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D03310B02C0738DF00B08D96 /* ContentView.swift */,
+				D03310C02C073A6A00B08D96 /* MainScreen */,
+				D03310C12C073A7000B08D96 /* DetailsScreen */,
+				D03310C22C073AEF00B08D96 /* CustomViews */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D03310C02C073A6A00B08D96 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D03310C82C07506C00B08D96 /* CityView.swift */,
+				D03310CA2C07507D00B08D96 /* CityViewModel.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		D03310C12C073A7000B08D96 /* DetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D03310CC2C07651500B08D96 /* DetailScreenView.swift */,
+				D03310CE2C07652300B08D96 /* DetailScreenViewModel.swift */,
+			);
+			path = DetailsScreen;
+			sourceTree = "<group>";
+		};
+		D03310C22C073AEF00B08D96 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				D03310D02C076B5D00B08D96 /* HotelsScreenView.swift */,
+				D03310D22C07CDD900B08D96 /* MustSeeScreenView.swift */,
+				D03310D42C07CDEA00B08D96 /* TransportScreenView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		D03310C52C07459800B08D96 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D03310C62C0745BA00B08D96 /* NetworkManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +228,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D03310D12C076B5D00B08D96 /* HotelsScreenView.swift in Sources */,
+				D03310C72C0745BA00B08D96 /* NetworkManager.swift in Sources */,
+				D03310CB2C07507D00B08D96 /* CityViewModel.swift in Sources */,
+				D03310C92C07506C00B08D96 /* CityView.swift in Sources */,
+				D03310D52C07CDEA00B08D96 /* TransportScreenView.swift in Sources */,
+				D03310CD2C07651500B08D96 /* DetailScreenView.swift in Sources */,
 				D03310B12C0738DF00B08D96 /* ContentView.swift in Sources */,
+				D03310CF2C07652300B08D96 /* DetailScreenViewModel.swift in Sources */,
+				D03310D32C07CDD900B08D96 /* MustSeeScreenView.swift in Sources */,
 				D03310AF2C0738DF00B08D96 /* TripAppApp.swift in Sources */,
+				D03310C42C07420A00B08D96 /* CountryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
